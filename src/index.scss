@@ -3,13 +3,14 @@
   padding: 0;
   margin: 0;
 }
-$purple: #3d0181;
-$timeline: #8a72a7;
-$pink: #d080b4ff;
-$background: #ddd3ea;
-$darkBlue: #001d3d;
-$white: #f8f6f6;
-$mint: #3eb489;
+$purple: hsl(268, 100%, 25%);
+$purple2: hsl(268, 30%, 90%);
+$timeline: hsl(268, 30%, 75%);
+$pink: hsl(321, 46%, 66%);
+$background: hsl(266, 35%, 87%);
+$darkBlue: hsl(211, 100%, 12%);
+$white: hsl(0, 12%, 97%);
+$mint: hsl(158, 49%, 47%);
 
 @font-face {
   font-family: 'Black';
@@ -441,6 +442,7 @@ html {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   .carouselArrow {
     position: absolute;
     display: block;
@@ -455,13 +457,12 @@ html {
     cursor: pointer;
     border-radius: 0.3rem;
     width: 2rem;
+    top: 7.25rem;
     &:first-of-type {
-      left: -1rem;
-      top: 45%;
+      left: 1rem;
     }
     &:last-of-type {
-      right: -1rem;
-      top: 45%;
+      right: 1rem;
     }
     &:hover {
       background-color: rgba($purple, 1);
@@ -475,8 +476,10 @@ html {
     display: flex;
     gap: 1rem;
     overflow-x: scroll;
-    width: 66rem;
-    padding: 2rem;
+    width: 62rem;
+    padding: {
+      top: 2rem;
+    }
     /* Hide scrollbar for Chrome, Safari and Opera */
     &::-webkit-scrollbar {
       display: none;
@@ -490,7 +493,8 @@ html {
     scroll-snap-align: center;
     scroll-snap-stop: always;
     figure {
-      background-color: $background;
+      background-color: $purple2;
+
       border-top: {
         left-radius: 0.3rem;
         right-radius: 0.3rem;
@@ -514,9 +518,9 @@ html {
               size: 1.3rem;
             }
             color: $purple;
+            cursor: pointer;
           }
 
-          color: $timeline;
           padding-bottom: 0.1rem;
           text: {
             transform: capitalize;
@@ -547,7 +551,7 @@ html {
           left: 1.5rem;
           right: 1rem;
         }
-        text-align: justify;
+        text-align: left;
 
         &:last-of-type {
           text-align: right;
@@ -591,9 +595,96 @@ html {
         top: 1em;
       }
       cursor: pointer;
-      details {
-        color: red;
+    }
+  }
+}
+
+.adoptionForm {
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 2px solid $timeline;
+  border-radius: 0.3rem;
+  width:50%;
+  margin:auto;
+
+  margin: {
+    bottom: 3rem;
+  }
+  form {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    label {
+      color: $timeline;
+      font: {
+        family: 'Bold';
       }
+      &:not(&:first-of-type) {
+        font: {
+          size: 1.3rem;
+        }
+        width: 100%;
+        text: {
+          align: left;
+        }
+        padding:{
+          bottom:0.5rem;
+        }
+      }
+    }
+    input {
+      margin-bottom: 1rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px $white inset !important;
+        -webkit-text-fill-color: $darkBlue !important;
+      }
+      &[type='text'],
+      &[type='email'],
+      &[type='tel'] {
+        background-color: transparent;
+        border-bottom: 2px solid $purple2;
+        font: {
+          family: 'Regular';
+          size:1.5rem;
+        }
+      }
+
+      &:first-of-type {
+        text-align: center;
+        border: none;
+        font: {
+          family: 'Black';
+          size: 2rem;
+        }
+        padding: {
+          bottom: 1rem;
+        }
+        color: $darkBlue;
+      }
+      &[type='submit'] {
+        width:50%;
+        margin: {
+          top: 2rem;
+        }
+      }
+    }
+  }
+  p {
+    padding: 2rem;
+    background-color: $purple2;
+    flex: 1 0 50%;
+    text-align: justify;
+    font: {
+      size: 0.8rem;
     }
   }
 }

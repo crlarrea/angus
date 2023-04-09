@@ -1,0 +1,40 @@
+[x] choose colour palette
+[x] change logo
+[x] choose fonts
+[x] home component
+[x] footer
+    [x] add links to email, phone, twitter, insta and fb
+[x] choose hero image
+[x] add subscribe to newsletter in footer
+[x] help us button in hero: formatting
+[x] navigation desktop
+[] optimise images sizes
+[] cat details
+[] navigation tablet
+[] navigation mobile
+[x] how adoption works
+    [x] add steps
+    [x] style component
+[x] cat welfare: home screen
+[x] hero
+    [x] redesign
+[] fix padding-right on buttons in contributions component    
+[x] adoption component
+    [x] gallery of cats up for adoption
+[] 404 error page:
+	link to long-lane.co.uk
+[x] add link to home page from logo 
+[-] backend for api
+    [-] articles
+    [-] cats for adoption
+    [-] shop
+    will leave until project confirmed
+
+[-] react library for paypal
+      will leave until project confirmed
+[] page not found
+    [] add message to contact hello@long-lane.co.uk
+[-] adjust palette following ui guide: greys and purples
+    will leave until project confirmed
+[] attribution
+    [] icons <a href="https://www.freepik.com/free-vector/illustration-set-mixed-icons-isolated-white-background_2687449.htm#query=icons&position=7&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik

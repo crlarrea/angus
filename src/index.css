@@ -20,7 +20,7 @@
 html {
   font-size: 16px;
   font-family: "Regular";
-  color: #001d3d;
+  color: hsl(211deg, 100%, 12%);
 }
 
 #root {
@@ -29,19 +29,19 @@ html {
   align-items: flex-start;
   justify-content: center;
   padding-top: 3rem;
-  background-color: #f8f6f6;
+  background-color: hsl(0deg, 12%, 97%);
 }
 
 .App {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  color: #001d3d;
+  color: hsl(211deg, 100%, 12%);
   padding-top: 3rem;
   margin-bottom: 3rem;
   width: 1200px;
   min-height: 100vh;
-  border: 1px solid #8a72a7;
+  border: 1px solid hsl(268deg, 30%, 75%);
   border-radius: 0.5rem;
 }
 
@@ -80,13 +80,13 @@ html {
 
 .active {
   opacity: 1;
-  color: #3d0181;
+  color: hsl(268deg, 100%, 25%);
   transform: scale(1.1);
   font-family: "Bold";
 }
 
 .inactive {
-  color: rgba(61, 1, 129, 0.5);
+  color: rgba(60, 0, 128, 0.5);
 }
 
 .logo {
@@ -127,7 +127,7 @@ html {
   justify-content: space-between;
   flex: 0.4 0 40%;
   border-radius: 0.3rem;
-  background-image: url("../src/assets/img/hero_background.png"), linear-gradient(0deg, #3d0181 0%, transparent 100%);
+  background-image: url("../src/assets/img/hero_background.png"), linear-gradient(0deg, hsl(268deg, 100%, 25%) 0%, transparent 100%);
   background-size: contain;
   clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 25% 100%);
 }
@@ -148,7 +148,7 @@ html {
   background-image: url("../src/assets/img/how_adoption_works.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-color: rgba(61, 1, 129, 0.1);
+  background-color: rgba(60, 0, 128, 0.1);
   min-height: 44rem;
 }
 .howAdoptionWorks article:last-of-type {
@@ -156,7 +156,7 @@ html {
   padding-top: 3rem;
   padding-left: 3rem;
   padding-bottom: 3rem;
-  background-color: rgba(61, 1, 129, 0.1);
+  background-color: rgba(60, 0, 128, 0.1);
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -166,7 +166,7 @@ html {
   display: flex;
   flex-flow: column wrap;
   list-style-type: none;
-  border-left: 3px solid #8a72a7;
+  border-left: 3px solid hsl(268deg, 30%, 75%);
   font-size: 1.2rem;
 }
 .howAdoptionWorks article:last-of-type ul li {
@@ -176,10 +176,10 @@ html {
   margin-left: -0.7rem;
 }
 .howAdoptionWorks article:last-of-type ul li details[open] summary {
-  color: #3d0181;
+  color: hsl(268deg, 100%, 25%);
 }
 .howAdoptionWorks article:last-of-type ul li details[open] summary:before {
-  color: #3d0181;
+  color: hsl(268deg, 100%, 25%);
 }
 .howAdoptionWorks article:last-of-type ul li details summary {
   text-transform: capitalize;
@@ -189,7 +189,7 @@ html {
 .howAdoptionWorks article:last-of-type ul li details summary:before {
   content: "●";
   padding-right: 1rem;
-  color: #8a72a7;
+  color: hsl(268deg, 30%, 75%);
   font-size: 2rem;
 }
 .howAdoptionWorks article:last-of-type ul li details p {
@@ -226,9 +226,9 @@ html {
 .catWelfare article {
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  border: 1px solid rgba(61, 1, 129, 0.2);
+  border: 1px solid rgba(60, 0, 128, 0.2);
   border-radius: 0.3rem;
-  box-shadow: 0rem 0.1rem 0.5rem 0.2rem rgba(61, 1, 129, 0.2);
+  box-shadow: 0rem 0.1rem 0.5rem 0.2rem rgba(60, 0, 128, 0.2);
   flex: 1 0 20rem;
   display: flex;
   flex-flow: column nowrap;
@@ -242,10 +242,10 @@ html {
 }
 .catWelfare article a {
   text-decoration: none;
-  color: #001d3d;
+  color: hsl(211deg, 100%, 12%);
 }
 .catWelfare article p {
-  color: #8a72a7;
+  color: hsl(268deg, 30%, 75%);
 }
 .catWelfare article img {
   border-top-right-radius: 0.3rem;
@@ -256,7 +256,7 @@ html {
   position: absolute;
   display: block;
   padding: 1rem;
-  background-color: rgba(61, 1, 129, 0.3);
+  background-color: rgba(60, 0, 128, 0.3);
   z-index: 1;
   transition: all 0.3s;
   height: 5rem;
@@ -276,8 +276,8 @@ html {
   top: 50%;
 }
 .catWelfare span:hover {
-  background-color: #3d0181;
-  color: #ddd3ea;
+  background-color: #3c0080;
+  color: hsl(266deg, 35%, 87%);
 }
 .catWelfare img {
   width: 100%;
@@ -303,14 +303,14 @@ html {
   flex-flow: column nowrap;
   align-items: center;
   padding-top: 5rem;
-  border: 2px solid #8a72a7;
+  border: 2px solid hsl(268deg, 30%, 75%);
   border-radius: 0.3rem;
   height: 15rem;
 }
 .contributions article:not(.contributions article:first-of-type) img {
   position: absolute;
   top: -2rem;
-  background-color: #f8f6f6;
+  background-color: hsl(0deg, 12%, 97%);
   padding: 1rem;
 }
 .contributions article h4 {
@@ -328,12 +328,13 @@ html {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
 }
 .cats .carouselArrow {
   position: absolute;
   display: block;
   padding: 1rem;
-  background-color: rgba(61, 1, 129, 0.3);
+  background-color: rgba(60, 0, 128, 0.3);
   z-index: 1;
   transition: all 0.3s;
   height: 5rem;
@@ -343,18 +344,17 @@ html {
   cursor: pointer;
   border-radius: 0.3rem;
   width: 2rem;
+  top: 7.25rem;
 }
 .cats .carouselArrow:first-of-type {
-  left: -1rem;
-  top: 45%;
+  left: 1rem;
 }
 .cats .carouselArrow:last-of-type {
-  right: -1rem;
-  top: 45%;
+  right: 1rem;
 }
 .cats .carouselArrow:hover {
-  background-color: #3d0181;
-  color: #ddd3ea;
+  background-color: #3c0080;
+  color: hsl(266deg, 35%, 87%);
 }
 .cats div {
   scroll-snap-type: x mandatory;
@@ -362,8 +362,8 @@ html {
   display: flex;
   gap: 1rem;
   overflow-x: scroll;
-  width: 66rem;
-  padding: 2rem;
+  width: 62rem;
+  padding-top: 2rem;
   /* Hide scrollbar for Chrome, Safari and Opera */
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -378,7 +378,7 @@ html {
   scroll-snap-stop: always;
 }
 .cats article figure {
-  background-color: #ddd3ea;
+  background-color: hsl(268deg, 30%, 90%);
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
   position: relative;
@@ -392,7 +392,6 @@ html {
   padding-bottom: 1rem;
 }
 .cats article figure figcaption p {
-  color: #8a72a7;
   padding-bottom: 0.1rem;
   text-transform: capitalize;
   text-align: right;
@@ -400,14 +399,15 @@ html {
 .cats article figure figcaption p:first-of-type {
   font-family: "Bold";
   font-size: 1.3rem;
-  color: #3d0181;
+  color: hsl(268deg, 100%, 25%);
+  cursor: pointer;
 }
 .cats article figure figcaption span {
   padding-top: 0.5rem;
   display: flex;
   gap: 0.5rem;
   justify-content: flex-end;
-  color: #8a72a7;
+  color: hsl(268deg, 30%, 75%);
 }
 .cats article figure img {
   z-index: 1;
@@ -419,9 +419,9 @@ html {
 }
 .cats article details {
   padding: 1rem;
-  border-bottom: 2px solid #ddd3ea;
-  border-left: 2px solid #ddd3ea;
-  border-right: 2px solid #ddd3ea;
+  border-bottom: 2px solid hsl(266deg, 35%, 87%);
+  border-left: 2px solid hsl(266deg, 35%, 87%);
+  border-right: 2px solid hsl(266deg, 35%, 87%);
   border-bottom-left-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
   padding-top: 1em;
@@ -431,16 +431,16 @@ html {
   padding-top: 1rem;
   padding-left: 1.5rem;
   padding-right: 1rem;
-  text-align: justify;
+  text-align: left;
 }
 .cats article details p:last-of-type {
   text-align: right;
-  color: #3d0181;
+  color: hsl(268deg, 100%, 25%);
   font-size: 1rem;
   text-transform: uppercase;
 }
 .cats article details p:last-of-type span {
-  color: #8a72a7;
+  color: hsl(268deg, 30%, 75%);
   padding-right: 0.5rem;
 }
 .cats article details summary {
@@ -449,10 +449,70 @@ html {
   gap: 0.5rem;
   list-style-type: none;
   font-size: 1rem;
-  color: #8a72a7;
+  color: hsl(268deg, 30%, 75%);
 }
-.cats article details details {
-  color: red;
+
+.adoptionForm {
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 2px solid hsl(268deg, 30%, 75%);
+  border-radius: 0.3rem;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.adoptionForm form {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.adoptionForm form label {
+  color: hsl(268deg, 30%, 75%);
+  font-family: "Bold";
+}
+.adoptionForm form label:not(.adoptionForm form label:first-of-type) {
+  font-size: 1.3rem;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+.adoptionForm form input {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.adoptionForm form input:-webkit-autofill, .adoptionForm form input:-webkit-autofill:hover, .adoptionForm form input:-webkit-autofill:focus, .adoptionForm form input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px hsl(0deg, 12%, 97%) inset !important;
+  -webkit-text-fill-color: hsl(211deg, 100%, 12%) !important;
+}
+.adoptionForm form input[type=text], .adoptionForm form input[type=email], .adoptionForm form input[type=tel] {
+  background-color: transparent;
+  border-bottom: 2px solid hsl(268deg, 30%, 90%);
+  font-family: "Regular";
+  font-size: 1.5rem;
+}
+.adoptionForm form input:first-of-type {
+  text-align: center;
+  border: none;
+  font-family: "Black";
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  color: hsl(211deg, 100%, 12%);
+}
+.adoptionForm form input[type=submit] {
+  width: 50%;
+  margin-top: 2rem;
+}
+.adoptionForm p {
+  padding: 2rem;
+  background-color: hsl(268deg, 30%, 90%);
+  flex: 1 0 50%;
+  text-align: justify;
+  font-size: 0.8rem;
 }
 
 section {
@@ -517,23 +577,23 @@ h3 {
 }
 
 .primaryBtn {
-  color: #f8f6f6;
-  background-color: #3d0181;
-  border: 2px solid #3d0181;
+  color: hsl(0deg, 12%, 97%);
+  background-color: hsl(268deg, 100%, 25%);
+  border: 2px solid hsl(268deg, 100%, 25%);
 }
 
 .secondaryBtn {
-  color: #001d3d;
-  border: 2px solid rgba(0, 29, 61, 0.8);
+  color: hsl(211deg, 100%, 12%);
+  border: 2px solid rgba(0, 30, 61, 0.8);
 }
 
 .darkBkgBtn {
   color: white;
-  background-color: rgba(61, 1, 129, 0.8);
+  background-color: rgba(60, 0, 128, 0.8);
   font-size: 1.2rem;
 }
 .darkBkgBtn:hover {
-  background-color: rgba(0, 29, 61, 0.8);
+  background-color: rgba(0, 30, 61, 0.8);
   color: white;
 }
 
@@ -542,7 +602,7 @@ footer {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #3d0181;
+  background-color: hsl(268deg, 100%, 25%);
   border-bottom-left-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
   margin-top: auto;
@@ -550,7 +610,7 @@ footer {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 1rem;
-  color: rgba(221, 211, 234, 0.5);
+  color: rgba(220, 210, 233, 0.5);
   font-size: 0.9rem;
 }
 footer h2 {
@@ -562,12 +622,12 @@ footer article ul {
 }
 footer article ul li a {
   transition: all 0.3s;
-  color: rgba(221, 211, 234, 0.5);
+  color: rgba(220, 210, 233, 0.5);
   text-decoration: none;
   font-size: 1.3rem;
 }
 footer article ul li a:hover {
-  color: #ddd3ea;
+  color: #dcd2e9;
 }
 footer article img {
   filter: invert(0.3) brightness(2);
@@ -595,12 +655,12 @@ footer article:first-of-type form input[type=email] {
   transition: all 0.3s;
   outline: none;
   background-color: transparent;
-  border: 2px solid rgba(221, 211, 234, 0.5);
-  color: #ddd3ea;
+  border: 2px solid rgba(220, 210, 233, 0.5);
+  color: hsl(266deg, 35%, 87%);
   font-family: "Bold";
 }
 footer article:first-of-type form input[type=email]:focus {
-  border-color: #ddd3ea;
+  border-color: #dcd2e9;
 }
 footer article:first-of-type form input[type=submit] {
   height: 2.5rem;
@@ -625,23 +685,23 @@ footer article:nth-of-type(3) ul {
 }
 footer article:nth-of-type(3) ul li a {
   transition: all 0.3s;
-  color: rgba(221, 211, 234, 0.5);
+  color: rgba(220, 210, 233, 0.5);
   font-size: 1.3rem;
 }
 footer article:nth-of-type(3) ul li a:hover {
-  color: #ddd3ea;
+  color: #dcd2e9;
 }
 footer article:nth-of-type(3) p {
   padding-top: 1rem;
-  color: rgba(221, 211, 234, 0.5);
+  color: rgba(220, 210, 233, 0.5);
 }
 
 .subscribed {
-  background-color: #3eb489;
+  background-color: hsl(158deg, 49%, 47%);
 }
 
 .notSubscribed {
-  background-color: #ddd3ea;
+  background-color: hsl(266deg, 35%, 87%);
 }
 
 /*# sourceMappingURL=index.css.map */
