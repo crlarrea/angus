@@ -607,6 +607,21 @@ html {
   color: hsl(268deg, 100%, 25%);
 }
 
+.pageNotFound {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 2rem;
+}
+.pageNotFound address {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.pageNotFound address a {
+  text-decoration: none;
+  font-style: normal;
+  color: hsl(268deg, 100%, 25%);
+}
+
 section {
   margin-top: 2rem;
   padding-left: 2rem;
