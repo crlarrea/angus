@@ -434,6 +434,7 @@ html {
       display: block;
       position: absolute;
       bottom: -1rem;
+      margin:0;
     }
   }
 }
@@ -605,8 +606,8 @@ html {
   flex-flow: column nowrap;
   border: 2px solid $timeline;
   border-radius: 0.3rem;
-  width:50%;
-  margin:auto;
+  width: 50%;
+  margin: auto;
 
   margin: {
     bottom: 3rem;
@@ -630,8 +631,8 @@ html {
         text: {
           align: left;
         }
-        padding:{
-          bottom:0.5rem;
+        padding: {
+          bottom: 0.5rem;
         }
       }
     }
@@ -654,7 +655,7 @@ html {
         border-bottom: 2px solid $purple2;
         font: {
           family: 'Regular';
-          size:1.5rem;
+          size: 1.5rem;
         }
       }
 
@@ -671,7 +672,7 @@ html {
         color: $darkBlue;
       }
       &[type='submit'] {
-        width:50%;
+        width: 50%;
         margin: {
           top: 2rem;
         }
@@ -686,6 +687,121 @@ html {
     font: {
       size: 0.8rem;
     }
+  }
+}
+
+.helpUs {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  article {
+    transition: all 0.3s;
+
+    display: flex;
+    gap: 1rem;
+    button {
+      text: {
+        transform: uppercase;
+      }
+      cursor: pointer;
+      background-color: transparent;
+
+      border: none;
+      outline: none;
+      color: $timeline;
+      &:focus {
+        color: $purple;
+      }
+      font: {
+        size: 1.3rem;
+      }
+    }
+    font: {
+      size: 1.3rem;
+    }
+    span {
+      text: {
+        transform: uppercase;
+      }
+      color: $purple;
+    }
+  }
+  div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    article {
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0rem 0.1rem 0.5rem 0.2rem rgba($purple, 0.2);
+  
+      }
+      display: flex;
+      flex: 0.3 0.3 70%;
+      flex-flow: column nowrap;
+      align-items: center;
+      gap: 1rem;
+      min-height: 25rem;
+      border: 2px solid $purple2;
+      border-radius: 0.3rem;
+      padding: 2rem;
+      text-align: center;
+
+      p {
+        &:first-of-type {
+          display: block;
+          font: {
+            size: 3rem;
+          }
+
+          width: 7rem;
+          aspect-ratio: 1/1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          padding: 1.5rem;
+          &:before {
+            content: '£';
+          }
+        }
+        &:last-of-type {
+          color: $timeline;
+        }
+      }
+      input {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.oneOff {
+  border: 1px solid $timeline;
+  p {
+    &:first-of-type {
+      border: 2px solid $timeline;
+    }
+  }
+}
+
+.monthly {
+  p {
+    &:first-of-type {
+      background-color: $purple2;
+      border: 2px solid $purple;
+      color: $purple;
+    }
+  }
+  input[type='button'] {
+    background-color: hsl(45, 100%, 50%);
+    color: $purple;
   }
 }
 section {

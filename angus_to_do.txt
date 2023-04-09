@@ -9,7 +9,8 @@
 [x] help us button in hero: formatting
 [x] navigation desktop
 [] optimise images sizes
-[] cat details
+[] change path in home page
+[x] cat details
 [] navigation tablet
 [] navigation mobile
 [x] how adoption works

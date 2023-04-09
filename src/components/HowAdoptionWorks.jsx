@@ -43,11 +43,11 @@ export const HowAdoptionWorks = () => {
                   <p>
                     {item.stepDescription}
                     {index + 1 === 1 ? (
-                      <NavLink className='btn secondaryBtn' to={'/adoption/cats'}>
+                      <NavLink className='btn secondaryBtn' to={'/adoption'}>
                         cats for adoption
                       </NavLink>
                     ) : index + 1 === 2 ? (
-                      <NavLink className='btn secondaryBtn' to={'/adoption/form'}>
+                      <NavLink className='btn secondaryBtn' to={'/adoption'}>
                         adoption application form
                       </NavLink>
                     ) : index + 1 === 3 ? (

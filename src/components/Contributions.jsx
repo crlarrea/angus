@@ -13,7 +13,7 @@ export const Contributions = ({ contributions }) => {
             <img src={el.img} alt='' />
             <h4>{el.title}</h4>
             <p>{el.description}</p>
-            <NavLink className='btn primaryBtn' to='/help-us'>
+            <NavLink className='btn primaryBtn' to='/contact'>
               {el.btn}
             </NavLink>
           </article>

@@ -322,6 +322,7 @@ html {
   display: block;
   position: absolute;
   bottom: -1rem;
+  margin: 0;
 }
 
 .cats {
@@ -513,6 +514,97 @@ html {
   flex: 1 0 50%;
   text-align: justify;
   font-size: 0.8rem;
+}
+
+.helpUs {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.helpUs article {
+  transition: all 0.3s;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+.helpUs article button {
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: hsl(268deg, 30%, 75%);
+  font-size: 1.3rem;
+}
+.helpUs article button:focus {
+  color: hsl(268deg, 100%, 25%);
+}
+.helpUs article span {
+  text-transform: uppercase;
+  color: hsl(268deg, 100%, 25%);
+}
+.helpUs div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.helpUs div article {
+  display: flex;
+  flex: 0.3 0.3 70%;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1rem;
+  min-height: 25rem;
+  border: 2px solid hsl(268deg, 30%, 90%);
+  border-radius: 0.3rem;
+  padding: 2rem;
+  text-align: center;
+}
+.helpUs div article:hover {
+  transform: scale(1.1);
+  box-shadow: 0rem 0.1rem 0.5rem 0.2rem rgba(60, 0, 128, 0.2);
+}
+.helpUs div article p:first-of-type {
+  display: block;
+  font-size: 3rem;
+  width: 7rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+.helpUs div article p:first-of-type:before {
+  content: "£";
+}
+.helpUs div article p:last-of-type {
+  color: hsl(268deg, 30%, 75%);
+}
+.helpUs div article input {
+  margin: 0;
+  width: 100%;
+}
+
+.oneOff {
+  border: 1px solid hsl(268deg, 30%, 75%);
+}
+.oneOff p:first-of-type {
+  border: 2px solid hsl(268deg, 30%, 75%);
+}
+
+.monthly p:first-of-type {
+  background-color: hsl(268deg, 30%, 90%);
+  border: 2px solid hsl(268deg, 100%, 25%);
+  color: hsl(268deg, 100%, 25%);
+}
+.monthly input[type=button] {
+  background-color: hsl(45deg, 100%, 50%);
+  color: hsl(268deg, 100%, 25%);
 }
 
 section {
