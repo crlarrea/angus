@@ -2,19 +2,29 @@
 import styles from "@/app/styles/plans.module.scss";
 import { useState } from "react";
 import { FaDonate } from "react-icons/fa";
+import {
+  TbLaurelWreath1,
+  TbLaurelWreath2,
+  TbLaurelWreath3,
+} from "react-icons/tb";
+import { FaMedal } from "react-icons/fa6";
 
 import { LuHandCoins } from "react-icons/lu";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Image from "next/image";
 export default function Plans() {
   const plans = [
-    { name: "paws", type: "monthly", amount: 2 },
-    { name: "tail", type: "monthly", amount: 5 },
-    // { name: "purr", type: "monthly", amount: 10 },
-    { name: "premium catnip", type: "monthly", amount: 20 },
-    { name: "£10", type: "one-off", amount: 10 },
-    { name: "£50", type: "one-off", amount: 50 },
-  ];
+    { name: "paws", type: "monthly", amount: 2, icon: <TbLaurelWreath3 /> },
+    { name: "tail", type: "monthly", amount: 5, icon: <TbLaurelWreath2 /> },
+    {
+      name: "premium catnip",
+      type: "monthly",
+      amount: 20,
+      icon: <TbLaurelWreath1 />,
+    },
+    { name: "£10", type: "one-off", amount: 10, icon: <FaMedal /> },
+    { name: "£50", type: "one-off", amount: 50, icon: <FaMedal /> },
+  ].sort((a, b) => b.amount - a.amount);
   const [planState, setPlan] = useState("monthly");
   const togglePlan = () => {
     if (planState === "monthly") {
@@ -69,19 +79,22 @@ export default function Plans() {
       </article>
       <article>
         {plans.map((plan, index) => {
-          const { name, amount, type } = plan;
+          const { name, amount, type, icon } = plan;
           return (
             <div
               className={`${styles.card} ${
                 type === planState ? "" : styles.hidden
               }`}
               key={`plan-${index}`}
+              data-amount={amount}
             >
+              <span>{icon}</span>
               <h3>{name}</h3>
-              <p>Can you spare £{amount}?</p>
-              <span>
-                <LuHandCoins /> Every penny helps.{" "}
-              </span>
+              <p>
+                Can you spare <strong>£{amount}?</strong>
+              </p>
+              <span>Every penny helps. </span>
+              <div className={styles.overlay}>£{amount}</div>
             </div>
           );
         })}

@@ -7,7 +7,7 @@ import Donations from "./donations";
 import Footer from "./footer";
 
 export const metadata: Metadata = {
-  title: "Angus Cat Rescua",
+  title: "Angus Cat Rescue",
   description: "Cat shelter and rehoming",
 };
 
