@@ -2,7 +2,13 @@ import styles from "@/app/styles/logo.module.scss";
 import { cherry } from "./fonts/fonts";
 import Link from "next/link";
 
-export default function Logo({ props }) {
+export default function Logo({ props }:{props:{
+  imgColour: string,
+  textColour: string,
+  imgWidth: string,
+  textSize: string,
+  
+}}) {
   const { imgColour, textColour, imgWidth, textSize } = props;
   return (
     <Link href="/" className={styles.logo}>
