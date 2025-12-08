@@ -1,9 +1,11 @@
 "use client";
 import styles from "@/app/styles/plans.module.scss";
 import { useState } from "react";
+import { FaDonate } from "react-icons/fa";
+
 import { LuHandCoins } from "react-icons/lu";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-
+import Image from "next/image";
 export default function Plans() {
   const plans = [
     { name: "paws", type: "monthly", amount: 2 },
@@ -22,9 +24,47 @@ export default function Plans() {
   return (
     <section className={styles.plans}>
       <article className={styles.copy}>
+        <ul className={styles.thumbnails}>
+          <li>
+            <Image
+              src="/cat_1.png"
+              fill
+              alt="cat"
+              sizes="(max-width:1024px) 50px"
+            />
+          </li>
+          <li>
+            <Image
+              src="/cat_2.png"
+              fill
+              alt="cat"
+              sizes="(max-width:1024px) 50px"
+            />
+          </li>
+          <li>
+            <Image
+              src="/cat_3.png"
+              fill
+              alt="cat"
+              sizes="(max-width:1024px) 50px"
+            />
+          </li>
+        </ul>
+        <span>they'll thank you</span>
         <h2>choose your donation</h2>
-        <button onClick={togglePlan}>
-          {planState === "monthly" ? "monthly" : "one-off"}
+        <button
+          onClick={togglePlan}
+          className={planState === "monthly" ? styles.monthly : styles.oneOff}
+        >
+          {planState === "monthly" ? (
+            <>
+              <FaDonate /> monthly
+            </>
+          ) : (
+            <>
+              <FaDonate /> one-off
+            </>
+          )}
         </button>
       </article>
       <article>

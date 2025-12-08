@@ -36,11 +36,46 @@
   flex-flow: column nowrap;
   align-items: center;
   button {
-    background-color: orange;
-    width: 10rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 1rem;
+    width: 9rem;
     height: 3rem;
-    border-radius: 0.3rem;
+    border-radius: 2rem;
     text-transform: uppercase;
+    font: {
+      weight: bold;
+    }
+    svg {
+      font-size: 1.5rem;
+    }
+  }
+  span {
+    color: white;
+  }
+  h2 {
+    margin-top: 1rem;
+  }
+}
+
+.thumbnails {
+  display: flex;
+  list-style-type: none;
+  li {
+    border: 3px solid ui.$soft-periwinkle;
+    position: relative;
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+    }
+    &:not(&:first-of-type) {
+      margin-left: -1rem;
+    }
   }
 }
 .card {
@@ -73,6 +108,14 @@
       // size: 0.7rem;
     }
   }
+}
+
+.monthly {
+  background-color: orange;
+}
+
+.oneOff {
+  background-color: silver;
 }
 
 .hidden {
