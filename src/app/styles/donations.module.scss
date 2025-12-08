@@ -1,0 +1,50 @@
+@use "./ui.module.scss";
+.donations {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row nowrap;
+  list-style-type: none;
+  font: {
+    size: 0.8rem;
+  }
+  // color: ui.$majorelle-blue;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+
+    // flex-flow: row nowrap;
+    overflow: hidden;
+    &:hover {
+      svg {
+        background-color: orange;
+        color: black;
+      }
+      span {
+        width: 5rem;
+      }
+    }
+    span {
+      transition: all 0.5s;
+      //   display: none
+      width: 0;
+    }
+
+    svg {
+      // display: inline-flex;
+      // background-color: ui.$majorelle-blue;
+      background-color: black;
+      color: white;
+
+      font: {
+        size: 2rem;
+      }
+
+      padding: 0.3rem;
+      border-radius: 100%;
+    }
+  }
+}

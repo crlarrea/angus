@@ -1,0 +1,54 @@
+@use "./ui.module.scss";
+.footer {
+  background-color: black;
+  color: white;
+  padding: 3rem;
+  width: 1024px;
+  display: flex;
+  flex-flow: row nowrap;
+
+  border-bottom: {
+    left-radius: 0.5rem;
+    right-radius: 0.5rem;
+  }
+
+  font: {
+    size: 0.7rem;
+  }
+  article {
+    display: inherit;
+
+    flex: 1 1 33%;
+  }
+  a {
+    &:hover {
+      color: ui.$soft-periwinkle;
+    }
+  }
+}
+.contact {
+  flex-flow: column nowrap;
+  gap: 0.3rem;
+  p {
+    color: gray;
+  }
+}
+.socials {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  ul {
+    font: {
+      size: 1rem;
+    }
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style-type: none;
+    gap: 0.5rem;
+  }
+  p {
+    flex: 0 0 100%;
+    color: grey;
+  }
+}

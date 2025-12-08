@@ -1,0 +1,38 @@
+@use "./ui.module.scss";
+.gallery {
+  flex: 0 1 45%;
+  column-count: 3;
+  flex-flow: row wrap;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at 0% 50%, transparent, transparent, white 80%);
+    z-index: 1;
+  }
+}
+
+.wrapper {
+  margin-top: 1rem;
+  position: relative;
+  width: 150px;
+  height: calc(150px * ui.$e);
+  img {
+    border-radius: 0.2rem;
+    object-fit: cover;
+  }
+  &:nth-of-type(even),
+  &:first-of-type,
+  &:last-of-type {
+    height: calc(150px / ui.$e);
+  }
+}
+@keyframes shift {
+  100% {
+    transform: translateY(-100%);
+  }
+}

@@ -1,0 +1,51 @@
+@use "./ui.module.scss";
+.hero {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  
+  overflow: hidden;
+  
+}
+
+.copy {
+  padding: 5rem 3rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  text-align: justify;
+  p {
+    max-width: 35ch;
+  }
+  a {
+    margin-top: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    // background-color: rgb(250, 187, 71);
+    background-color: orange;
+    border: 2px solid orange;
+    // align-self: flex-start;
+    padding: 0.6rem 2rem 0.6rem 1rem;
+    text: {
+      transform: capitalize;
+    }
+    border-radius: 0.3rem;
+    font: {
+      weight: bold;
+      size: 1.5rem;
+    }
+    svg {
+      color: blanchedalmond;
+    }
+    box-shadow: -0.5rem 0.5rem 0rem blanchedalmond;
+
+    &:hover {
+      transition: all 0.3s;
+      transform: translateY(3px);
+      box-shadow: unset;
+    }
+  }
+}
