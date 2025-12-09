@@ -22,7 +22,7 @@ export default function Hero() {
         </p>
         <p> Set up a monthly donation from as little as £2.00!</p>
 
-        <Link href="/donate">
+        <Link href="#">
           <FaDonate />
           <span>donate</span>
         </Link>
