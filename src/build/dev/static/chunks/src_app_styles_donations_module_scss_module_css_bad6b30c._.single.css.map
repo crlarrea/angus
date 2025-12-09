@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/src/app/styles/donations.module.scss"],"sourcesContent":["@use \"./ui.module.scss\";\n.donations {\n  flex: 0 0 20%;\n  display: flex;\n  justify-content: flex-end;\n  flex-flow: row nowrap;\n  list-style-type: none;\n  font: {\n    size: 0.8rem;\n  }\n  // color: ui.$majorelle-blue;\n\n  a {\n    display: inline-flex;\n    align-items: center;\n    gap: 0.5rem;\n    text-transform: uppercase;\n\n    // flex-flow: row nowrap;\n    overflow: hidden;\n    &:hover {\n      svg {\n        background-color: orange;\n        color: black;\n      }\n      span {\n        width: 5rem;\n      }\n    }\n    span {\n      transition: all 0.5s;\n      //   display: none\n      width: 0;\n    }\n\n    svg {\n      // display: inline-flex;\n      // background-color: ui.$majorelle-blue;\n      background-color: black;\n      color: white;\n\n      font: {\n        size: 2rem;\n      }\n\n      padding: 0.3rem;\n      border-radius: 100%;\n    }\n  }\n}\n"],"names":[],"mappings":"AACA;;;;;;;;;AAWE;;;;;;;;AASI;;;;;AAIA;;;;AAIF;;;;;AAMA"}}]
+}

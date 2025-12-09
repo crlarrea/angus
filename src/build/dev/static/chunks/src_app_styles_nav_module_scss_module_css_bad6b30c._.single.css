@@ -1,0 +1,27 @@
+/* [project]/src/app/styles/nav.module.scss.module.css [app-client] (css) */
+.nav-module-scss-module__TLzira__nav {
+  flex: 0 0 50%;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.nav-module-scss-module__TLzira__nav ul {
+  text-transform: capitalize;
+  flex-flow: row;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-module-scss-module__TLzira__nav ul li {
+  text-align: center;
+  border-bottom: 1px solid #0000;
+  align-items: center;
+  padding: .5rem 1rem;
+  display: inline-flex;
+}
+
+.nav-module-scss-module__TLzira__nav ul li:hover {
+  border-color: #6e44ff;
+}
+
+/*# sourceMappingURL=src_app_styles_nav_module_scss_module_css_bad6b30c._.single.css.map*/

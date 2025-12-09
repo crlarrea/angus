@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/src/app/styles/nav.module.scss","turbopack:///turbopack:///[project]/src/app/styles/ui.module.scss"],"sourcesContent":["@use \"./ui.module.scss\";\n.nav {\n  display: flex;\n\n  flex: 0 0 50%;\n  \n  overflow-x: scroll;\n  ul {\n    display: flex;\n    flex-flow: row nowrap;\n    list-style-type: none;\n    text-transform: capitalize;\n    // border-bottom: 1px solid ui.$majorelle-blue;\n    li {\n      display: inline-flex;\n      align-items: center;\n      text-align: center;\n      border-bottom: 1px solid transparent;\n      padding: 0.5rem 1rem;\n\n      &:hover {\n        border-color: ui.$majorelle-blue;\n      }\n    }\n    // justify-content: space-between;\n  }\n}\n","$majorelle-blue: #6e44ffff;\n$soft-periwinkle: #b892ffff;\n$blush-pop: #ffc2e2ff;\n$cotton-candy: #ff90b3ff;\n$light-coral: #ef7a85ff;\n\n$e: 1.618;"],"names":[],"mappings":"AACA;;;;;;AAME;;;;;;;AAME;;;;;;;;AAOE"}}]
+}

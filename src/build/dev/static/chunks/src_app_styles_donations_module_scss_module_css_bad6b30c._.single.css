@@ -1,0 +1,41 @@
+/* [project]/src/app/styles/donations.module.scss.module.css [app-client] (css) */
+.donations-module-scss-module__ZuZNEa__donations {
+  flex-flow: row;
+  flex: 0 0 20%;
+  justify-content: flex-end;
+  font-size: .8rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.donations-module-scss-module__ZuZNEa__donations a {
+  text-transform: uppercase;
+  align-items: center;
+  gap: .5rem;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.donations-module-scss-module__ZuZNEa__donations a:hover svg {
+  color: #000;
+  background-color: orange;
+}
+
+.donations-module-scss-module__ZuZNEa__donations a:hover span {
+  width: 5rem;
+}
+
+.donations-module-scss-module__ZuZNEa__donations a span {
+  width: 0;
+  transition: all .5s;
+}
+
+.donations-module-scss-module__ZuZNEa__donations a svg {
+  color: #fff;
+  background-color: #000;
+  border-radius: 100%;
+  padding: .3rem;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=src_app_styles_donations_module_scss_module_css_bad6b30c._.single.css.map*/

@@ -1,34 +1,27 @@
 @use "./ui.module.scss";
 .gallery {
-  flex: 0 1 45%;
-  column-count: 3;
-  flex-flow: row wrap;
-  max-height: 600px;
+  display: flex;
+  flex-flow: row nowrap;
+  max-height: 200px;
   overflow: hidden;
   position: relative;
-  &:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(ellipse at 0% 50%, transparent, transparent, white 80%);
-    z-index: 1;
-  }
 }
 
 .wrapper {
-  margin-top: 1rem;
   position: relative;
-  width: 150px;
+  flex: 0 0 150px;
   height: calc(150px * ui.$e);
-  img {
-    border-radius: 0.2rem;
-    object-fit: cover;
+  &:not(&:nth-of-type(3)) {
+    filter: grayscale(1);
+    &:hover {
+      transition: all 0.5s;
+      transform: translateY(-10%);
+      filter: grayscale(0);
+    }
   }
-  &:nth-of-type(even),
-  &:first-of-type,
-  &:last-of-type {
-    height: calc(150px / ui.$e);
+
+  img {
+    object-fit: cover;
   }
 }
 @keyframes shift {

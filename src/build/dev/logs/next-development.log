@@ -1,5 +1,115 @@
-[00:12:42.239] Server  LOG      ✓ Compiled in 177ms
-[00:12:50.779] Server  LOG      ✓ Compiled in 41ms
-[00:12:54.900] Server  LOG      ✓ Compiled in 24ms
-[00:12:59.758] Server  LOG      ✓ Compiled in 34ms
-[00:13:38.898] Server  LOG      ✓ Compiled in 34ms
+[00:00:00.654] Server  LOG      ✓ Ready in 460ms
+[00:00:05.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.878] Browser WARN    Image with src "/cat_2.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:06.324] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/cat_10.png" "received" null
+[00:00:42.077] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:43.693] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/cat_10.png" "received" null
+[00:00:43.715] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:01:34.131] Server  LOG      ✓ Compiled in 54ms
+[00:01:34.259] Browser ERROR   ./src/app/styles/info.module.scss
+Error evaluating Node.js code
+Error: Undefined variable.
+   ╷
+24 │     color: ui.$bluemajorelle; 
+   │            ^^^^^^^^^^^^^^^^^
+   ╵
+  src/app/styles/info.module.scss 24:12  root stylesheet
+Caused by: Error: Undefined variable.
+   ╷
+24 │     color: ui.$bluemajorelle; 
+   │            ^^^^^^^^^^^^^^^^^
+   ╵
+  src/app/styles/info.module.scss 24:12  root stylesheet
+    [at Object.wrapException (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:2316:47)]
+    [at /Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:89216:23]
+    [at _wrapJsFunctionForAsync_closure.$protected (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38319:12)]
+    [at Object._asyncStartSync (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:4948:20)]
+    [at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:89222:16)]
+    [at _EvaluateVisitor2.visitVariableExpression$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:89196:19)]
+    [at VariableExpression0.accept$1$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:125564:22)]
+    [at VariableExpression0.accept$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:125567:19)]
+    [at /Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:87277:41]
+    [at _wrapJsFunctionForAsync_closure.$protected (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38319:12)]
+    [at _awaitOnObject_closure.call$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38307:32)]
+    [at Object._rootRunUnary (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:5402:18)]
+    [at StaticClosure.<anonymous> (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:125885:16)]
+    [at _CustomZone.runUnary$2$2 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:39750:39)]
+    [at _Future__propagateToListeners_handleValueCallback.call$0 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38808:51)]
+    [at Object._Future__propagateToListeners (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:5194:93)]
+    [at _Future._completeWithValue$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38671:9)]
+    [at _AsyncAwaitCompleter.complete$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38294:14)]
+    [at Object._asyncReturn (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:4956:17)]
+    [at /Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:91317:24]
+    [at _wrapJsFunctionForAsync_closure.$protected (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38319:12)]
+    [at _awaitOnObject_closure.call$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38307:32)]
+    [at Object._rootRunUnary (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:5402:18)]
+    [at StaticClosure.<anonymous> (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:125885:16)]
+    [at _CustomZone.runUnary$2$2 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:39750:39)]
+    [at _Future__propagateToListeners_handleValueCallback.call$0 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38808:51)]
+    [at Object._Future__propagateToListeners (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:5194:93)]
+    [at _Future._completeWithValue$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38671:9)]
+    [at _AsyncAwaitCompleter.complete$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38294:14)]
+    [at Object._asyncReturn (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:4956:17)]
+    [at /Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:91349:24]
+    [at _wrapJsFunctionForAsync_closure.$protected (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:4984:15)]
+    [at _wrapJsFunctionForAsync_closure.call$2 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38319:12)]
+    [at _awaitOnObject_closure.call$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38307:32)]
+    [at Object._rootRunUnary (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:5402:18)]
+    [at StaticClosure.<anonymous> (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:125885:16)]
+    [at _CustomZone.runUnary$2$2 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:39750:39)]
+    [at _Future__propagateToListeners_handleValueCallback.call$0 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38808:51)]
+    [at Object._Future__propagateToListeners (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:5194:93)]
+    [at _Future._completeWithValue$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38671:9)]
+    [at _Future__asyncCompleteWithValue_closure.call$0 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:38736:18)]
+    [at Object._rootRun (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:5392:16)]
+    [at StaticClosure.<anonymous> (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:125881:16)]
+    [at _CustomZone.run$1$1 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:39745:39)]
+    [at _CustomZone_bindCallback_closure.call$0 (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:39842:25)]
+    [at Object._microtaskLoop (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:5252:24)]
+    [at StaticClosure._startMicrotaskLoop (/Users/christianlarrea/Desktop/angus/node_modules/.pnpm/sass@1.94.2/node_modules/sass/sass.dart.js:5258:11)]
+
+Import trace:
+  Server Component:
+    ./src/app/styles/info.module.scss
+    ./src/app/info.tsx
+    ./src/app/page.tsx
+[00:01:58.783] Server  LOG      ✓ Compiled in 29ms
+[00:02:00.826] Server  LOG      ✓ Compiled in 19ms
+[00:02:12.259] Server  LOG      ✓ Compiled in 16ms
+[00:02:20.540] Server  LOG      ✓ Compiled in 36ms
+[00:02:26.087] Server  LOG      ✓ Compiled in 20ms
+[00:05:27.019] Server  LOG      ✓ Compiled in 37ms
+[00:05:29.850] Server  LOG      ✓ Compiled in 16ms
+[00:05:34.576] Server  LOG      ✓ Compiled in 30ms
+[00:05:38.465] Server  LOG      ✓ Compiled in 14ms
+[00:05:42.682] Server  LOG      ✓ Compiled in 17ms
+[00:05:48.497] Server  LOG      ✓ Compiled in 30ms
+[00:06:10.252] Server  LOG      ✓ Compiled in 23ms
+[00:06:23.420] Server  LOG      ✓ Compiled in 25ms
+[00:06:34.927] Server  LOG      ✓ Compiled in 33ms
+[00:06:40.882] Server  LOG      ✓ Compiled in 28ms
+[00:06:50.358] Server  LOG      ✓ Compiled in 49ms
+[00:06:55.229] Server  LOG      ✓ Compiled in 21ms
+[00:06:58.640] Server  LOG      ✓ Compiled in 11ms
+[00:07:50.778] Server  LOG      ✓ Compiled in 33ms
+[00:07:58.211] Server  LOG      ✓ Compiled in 47ms
+[00:08:18.710] Server  LOG      ✓ Compiled in 159ms
+[00:08:22.982] Server  LOG      ✓ Compiled in 18ms
+[00:08:49.322] Server  LOG      ✓ Compiled in 37ms
+[00:09:03.331] Server  LOG      ✓ Compiled in 36ms
+[00:09:11.328] Server  LOG      ✓ Compiled in 20ms
+[00:09:17.401] Server  LOG      ✓ Compiled in 18ms
+[00:09:28.946] Server  LOG      ✓ Compiled in 34ms
+[00:09:55.650] Server  LOG      ✓ Compiled in 36ms
+[00:10:02.234] Server  LOG      ✓ Compiled in 17ms
+[00:10:11.768] Server  LOG      ✓ Compiled in 22ms
+[00:10:27.862] Server  LOG      ✓ Compiled in 36ms
+[00:10:32.442] Server  LOG      ✓ Compiled in 15ms
+[00:10:42.560] Server  LOG      ✓ Compiled in 30ms
+[00:10:43.830] Server  LOG      ✓ Compiled in 14ms
+[00:10:59.901] Server  LOG      ✓ Compiled in 32ms
+[00:12:11.284] Server  LOG      ✓ Compiled in 46ms

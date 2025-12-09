@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/src/app/styles/home.module.scss"],"sourcesContent":[".home {\n  width: 1024px;\n  display: flex;\n  flex-flow: column nowrap;\n  gap: 3rem;\n}\n"],"names":[],"mappings":"AAAA"}}]
+}

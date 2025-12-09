@@ -1,0 +1,36 @@
+/* [project]/src/app/styles/gallery.module.scss.module.css [app-client] (css) */
+.gallery-module-scss-module__UWK_Va__gallery {
+  flex-flow: row;
+  max-height: 200px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-module-scss-module__UWK_Va__wrapper {
+  flex: 0 0 150px;
+  height: 242.7px;
+  position: relative;
+}
+
+.gallery-module-scss-module__UWK_Va__wrapper:not(.gallery-module-scss-module__UWK_Va__wrapper:nth-of-type(3)) {
+  filter: grayscale();
+}
+
+.gallery-module-scss-module__UWK_Va__wrapper:not(.gallery-module-scss-module__UWK_Va__wrapper:nth-of-type(3)):hover {
+  filter: grayscale(0);
+  transition: all .5s;
+  transform: translateY(-10%);
+}
+
+.gallery-module-scss-module__UWK_Va__wrapper img {
+  object-fit: cover;
+}
+
+@keyframes gallery-module-scss-module__UWK_Va__shift {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/*# sourceMappingURL=src_app_styles_gallery_module_scss_module_css_bad6b30c._.single.css.map*/

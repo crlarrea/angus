@@ -1,7 +1,7 @@
 import styles from "@/app/styles/hero.module.scss";
 import Link from "next/link";
 import { FaDonate } from "react-icons/fa";
-import Gallery from "./gallery";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -21,14 +21,15 @@ export default function Hero() {
           practical help, and assistance with rehoming when it’s needed most.
         </p>
         <p> Set up a monthly donation from as little as £2.00!</p>
-        
+
         <Link href="/donate">
           <FaDonate />
           <span>donate</span>
         </Link>
       </article>
-
-      <Gallery />
+      <article className={styles.heroImage}>
+        <Image src="/cat_2.png" fill alt="hero image"  sizes="(max-width:1024px) 511px"/>
+      </article>
     </section>
   );
 }

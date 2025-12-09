@@ -1,0 +1,59 @@
+@use "./ui.module.scss";
+.info {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.copy {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  padding-bottom: 5rem;
+  h2 {
+    max-width: 30ch;
+  }
+  p {
+    max-width: 45ch;
+    text-align: justify;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    
+    margin-top: 1rem;
+    color: ui.$majorelle-blue;
+    svg {
+      flex-basis: 0;
+    }
+    &:hover {
+      svg {
+        animation: slideRight 1s forwards;
+        transition: all 0.5s;
+        flex-basis: 1.8rem;
+      }
+    }
+    font: {
+      size: 1.2rem;
+    }
+    text: {
+      transform: uppercase;
+    }
+  }
+}
+
+
+@keyframes slideRight{
+  0%{
+    transform: translateX(-100%);
+    filter: blur(5px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+  }
+}

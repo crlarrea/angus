@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/src/app/styles/logo.module.scss"],"sourcesContent":["@use \"./ui.module.scss\";\n.logo {\n  display: flex;\n  align-items: flex-end;\n  h1 {\n    text-transform: capitalize;\n  }\n}\n"],"names":[],"mappings":"AACA;;;;;AAGE"}}]
+}

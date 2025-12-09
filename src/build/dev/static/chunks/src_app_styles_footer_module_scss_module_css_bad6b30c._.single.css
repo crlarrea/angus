@@ -1,0 +1,52 @@
+/* [project]/src/app/styles/footer.module.scss.module.css [app-client] (css) */
+.footer-module-scss-module__Yb9bkq__footer {
+  color: #fff;
+  background-color: #000;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  flex-flow: row;
+  width: 1024px;
+  padding: 3rem;
+  font-size: .7rem;
+  display: flex;
+}
+
+.footer-module-scss-module__Yb9bkq__footer article {
+  display: inherit;
+  flex: 33%;
+}
+
+.footer-module-scss-module__Yb9bkq__footer a:hover {
+  color: #b892ff;
+}
+
+.footer-module-scss-module__Yb9bkq__contact {
+  flex-flow: column;
+  gap: .3rem;
+}
+
+.footer-module-scss-module__Yb9bkq__contact p {
+  color: gray;
+}
+
+.footer-module-scss-module__Yb9bkq__socials {
+  flex-flow: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-module-scss-module__Yb9bkq__socials ul {
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: .5rem;
+  font-size: 1rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.footer-module-scss-module__Yb9bkq__socials p {
+  color: gray;
+  flex: 0 0 100%;
+}
+
+/*# sourceMappingURL=src_app_styles_footer_module_scss_module_css_bad6b30c._.single.css.map*/
