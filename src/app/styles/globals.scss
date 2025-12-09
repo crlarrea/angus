@@ -21,9 +21,24 @@ a {
 }
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 3rem;
   padding: 2rem 0;
   width: 1024px;
+}
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  header {
+    width: 100%;
+    
+  }
 }

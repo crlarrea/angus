@@ -8,14 +8,14 @@ export default function Info() {
     <section className={styles.info}>
       <article className={styles.copy}>
         <h2>
-          Every thought about re-homing an older cat, but worry about vets
+          Ever thought about re-homing an older cat, but worry about vets
           bills?
         </h2>
         <p>
           Ask about becoming a Permanent Foster, we will pay the vets bills for
           the right person!
         </p>
-        <Link href="/rehoming">
+        <Link href="#">
           <FaArrowCircleRight />
           find out more
         </Link>

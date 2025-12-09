@@ -4,3 +4,17 @@
   flex-flow: column nowrap;
   gap: 3rem;
 }
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home{
+    width: 100%;
+  }
+}
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+.home{
+    width: 100%;
+  }
+}

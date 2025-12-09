@@ -10,6 +10,7 @@
 .wrapper {
   position: relative;
   flex: 0 0 150px;
+
   height: calc(150px * ui.$e);
   &:not(&:nth-of-type(3)) {
     filter: grayscale(1);
@@ -27,5 +28,19 @@
 @keyframes shift {
   100% {
     transform: translateY(-100%);
+  }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  .gallery {
+    width: 100%;
+  }
+  .wrapper {
+    flex: 0 0 80px;
   }
 }

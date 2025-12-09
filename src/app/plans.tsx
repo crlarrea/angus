@@ -77,7 +77,7 @@ export default function Plans() {
           )}
         </button>
       </article>
-      <article>
+      <article className={styles.cards}>
         {plans.map((plan, index) => {
           const { name, amount, type, icon } = plan;
           return (

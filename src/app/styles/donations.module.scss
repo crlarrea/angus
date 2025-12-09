@@ -1,6 +1,6 @@
 @use "./ui.module.scss";
 .donations {
-  flex: 0 0 20%;
+  flex: 0 0 10rem;
   display: flex;
   justify-content: flex-end;
   flex-flow: row nowrap;
@@ -46,5 +46,19 @@
       padding: 0.3rem;
       border-radius: 100%;
     }
+  }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  .donations{
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    gap:0.3rem;
   }
 }

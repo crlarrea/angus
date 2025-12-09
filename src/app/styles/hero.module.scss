@@ -57,3 +57,27 @@
     object-fit: cover;
   }
 }
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    border-radius: 0;
+  }
+}
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  .copy {
+    padding: 2rem 1rem 5rem 1rem;
+  }
+  .hero {
+    // width: 320px;
+    border-radius: 0;
+    border: none;
+    flex-flow: column nowrap;
+    
+  }
+  .heroImage {
+    flex-basis: 250px;
+  }
+}

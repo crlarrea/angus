@@ -39,6 +39,7 @@
     }
     font: {
       size: 1.2rem;
+      weight: 800;
     }
     text: {
       transform: uppercase;
@@ -55,5 +56,20 @@
   }
   100%{
     transform: translateX(0);
+  }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  .info{
+    border: none;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    gap:0.3rem;
   }
 }

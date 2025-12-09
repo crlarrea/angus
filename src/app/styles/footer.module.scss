@@ -52,3 +52,23 @@
     color: grey;
   }
 }
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  .footer {
+    padding: 2rem;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    width: 100%;
+    border-radius: 0;
+    
+  }
+}

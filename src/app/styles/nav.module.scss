@@ -1,9 +1,8 @@
 @use "./ui.module.scss";
 .nav {
   display: flex;
+  // background-color: red;
 
-  flex: 0 0 50%;
-  
   overflow-x: scroll;
   ul {
     display: flex;
@@ -23,5 +22,17 @@
       }
     }
     // justify-content: space-between;
+  }
+}
+
+
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  .nav {
+    ul{
+      display: none;
+    }
+    
   }
 }

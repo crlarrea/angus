@@ -21,7 +21,7 @@ export default function Nav() {
       <ul>
         {navigation.map((el) => (
           <li key={toSlug(el)}>
-            <Link href={`/${toSlug(el)}`}>{el}</Link>
+            <Link href="#">{el}</Link>
           </li>
         ))}
         

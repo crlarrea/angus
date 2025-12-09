@@ -196,3 +196,37 @@
     transform: translateX(500%) rotateZ(30deg);
   }
 }
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .plans {
+    justify-content: space-between;
+    border-radius: 0;
+    height: 800px;
+  }
+  .cards {
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .card {
+    width: 250px;
+    height: calc(250px / ui.$e);
+  }
+}
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  .plans {
+    justify-content: space-between;
+    border-radius: 0;
+    height: auto;
+  }
+  .cards {
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .card {
+    width: 250px;
+    height: calc(250px / ui.$e);
+  }
+}
