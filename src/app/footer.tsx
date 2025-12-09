@@ -29,8 +29,9 @@ export default function Footer() {
         />
         <Socials />
         <p>
-          Angus Cat Rescue Angela Smith License No: AR2 License Authority: Angus
-          Council
+          Angus Cat Rescue Angela Smith <br />
+          License No: AR2 <br />
+          License Authority: Angus Council
         </p>
       </article>
     </footer>
