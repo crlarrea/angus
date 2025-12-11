@@ -1,6 +1,6 @@
 import styles from "@/app/styles/gallery.module.scss";
 import Image from "next/image";
-const cats = Array(10).fill(null);
+const cats = Array(7).fill(null);
 
 export default function Gallery() {
   return (
