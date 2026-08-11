@@ -1,0 +1,16 @@
+@use "./styles/ui.module.scss";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  color: ui.$black;
+}
+
+header{
+  display:  none;
+}

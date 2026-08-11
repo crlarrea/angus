@@ -1,0 +1,118 @@
+@use "./ui.module.scss";
+.hero {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 70dvh;
+  width: 100dvw;
+  background: radial-gradient(
+    circle at 50% 50%,
+    ui.$purple 50%,
+    ui.$purple-500
+  );
+  color: ui.$white;
+}
+
+.leftPanel {
+  flex: 1 1 33%;
+  height: 100%;
+  display: flex;
+  gap: ui.$m;
+  flex-flow: column nowrap;
+  padding: ui.$h 0 ui.$xh ui.$h;
+  z-index: 1;
+}
+
+.ctas {
+  margin-top: ui.$xl;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: ui.$m;
+  a {
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: ui.$xxs;
+    // margin-top: ui.$xxl;
+    text: {
+      decoration: none;
+      transform: capitalize;
+    }
+
+    border: 2px solid ui.$purple-100;
+    align-self: flex-start;
+    // border: 2px solid ui.$purple-500;
+    padding: ui.$xxs ui.$xxl ui.$xxs ui.$xs;
+    border-radius: ui.$xxs;
+    // background-color: ui.$yellow;
+    font: {
+      size: ui.$m;
+      weight: 400;
+    }
+
+    svg {
+      font: {
+        size: ui.$l;
+      }
+    }
+    &:first-of-type {
+      background-color: ui.$yellow;
+      color: ui.$purple-900;
+      border-color: ui.$yellow;
+    }
+  }
+}
+.title {
+  font: {
+    size: ui.$xxh;
+  }
+  line-height: ui.$xh;
+
+  span {
+    display: inline-block;
+    color: ui.$yellow;
+    transform: rotateZ(-5deg);
+    font: {
+      size: 120px;
+    }
+    border-bottom: 5px solid ui.$yellow;
+    padding-bottom: ui.$s;
+
+  }
+}
+
+.subtitle {
+  font: {
+    size: ui.$l;
+    weight: 400;
+  }
+  max-width: 35ch;
+  line-height: ui.$xxl;
+  color: ui.$purple-100;
+}
+
+.rightPanel {
+  flex: 1 1 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.heroImage {
+  top: 0;
+  flex: 1 1 33%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at 50% 40%, transparent, ui.$purple 80%),
+    url("../../../public/hero_bkg.png");
+  background-size: cover;
+  img {
+    filter: drop-shadow(0 0 ui.$xxh rgba(ui.$white, 0.7))
+      drop-shadow(0 0 ui.$xxs ui.$white);
+    object: {
+      fit: contain;
+      position: bottom;
+    }
+  }
+}
