@@ -12,6 +12,7 @@
     ui.$purple-500
   );
   color: ui.$white;
+  overflow: hidden;
 }
 
 .leftPanel {
@@ -24,48 +25,6 @@
   z-index: 1;
 }
 
-.ctas {
-  margin-top: ui.$xl;
-  display: flex;
-  flex-flow: row nowrap;
-  gap: ui.$m;
-  a {
-    color: inherit;
-
-    display: inline-flex;
-    align-items: center;
-    gap: ui.$xxs;
-    // margin-top: ui.$xxl;
-    text: {
-      decoration: none;
-      transform: capitalize;
-    }
-
-    border: 2px solid ui.$purple-100;
-    align-self: flex-start;
-    // border: 2px solid ui.$purple-500;
-    padding: ui.$xxs ui.$xxl ui.$xxs ui.$xs;
-    border-radius: ui.$xxs;
-    // background-color: ui.$yellow;
-    font: {
-      size: ui.$l;
-      weight: 600;
-    }
-    text-transform: uppercase;
-
-    svg {
-      mix-blend-mode: color-burn;
-      font: {
-        size: ui.$l;
-      }
-    }
-    &:first-of-type {
-      background-color: ui.$yellow;
-      color: ui.$purple-900;
-      border-color: ui.$yellow;
-    }
-  }
-}
 .title {
   font: {
     size: ui.$xxh;
@@ -85,13 +44,40 @@
 }
 
 .subtitle {
-  font: {
-    size: ui.$l;
-    weight: 400;
-  }
   max-width: 35ch;
-  line-height: ui.$xxl;
   color: ui.$purple-100;
+}
+.ctas {
+  margin-top: ui.$xl;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: ui.$m;
+  a {
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: ui.$xxs;
+    text: {
+      decoration: none;
+    }
+
+    border: 2px solid ui.$purple-100;
+    padding: ui.$xxs ui.$xxl ui.$xxs ui.$xs;
+    border-radius: ui.$xxs;
+    font: {
+      weight: 600;
+    }
+    text-transform: uppercase;
+
+    svg {
+      mix-blend-mode: color-burn;
+    }
+    &:first-of-type {
+      background-color: ui.$yellow;
+      color: ui.$purple-900;
+      border-color: ui.$yellow;
+    }
+  }
 }
 
 .rightPanel {
@@ -99,10 +85,14 @@
   flex: 1 1 33%;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  gap: ui.$l;
   justify-content: flex-end;
   height: 100%;
-  padding-bottom: ui.$xh;
+  font: {
+    size: ui.$xxl;
+  }
+  // line-height: ui.$xxxxl;
+  padding-bottom: ui.$h;
 }
 .heroImage {
   flex: 1 1 33%;
@@ -128,97 +118,68 @@
   }
 }
 
-.heroCards {
-  gap: ui.$m;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.donationCard {
-  background: linear-gradient(0deg, ui.$purple-100, transparent);
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  gap: ui.$m;
-  width: 180px;
-  padding: ui.$xxl ui.$m ui.$m ui.$m;
-  aspect-ratio: calc(16 / 9);
-  border-radius: ui.$xxs;
-  border: 1px solid ui.$white;
-  font: {
-    weight: 600;
-  }
-  p {
-    z-index: 1;
-  }
-  a {
-    z-index: 1;
-    color: inherit;
-    text-decoration: none;
-    font: {
-      size: ui.$s;
-    }
-    border: 1px solid white;
-    align-self: flex-start;
-    padding: ui.$xxs;
-    border-radius: ui.$xxs;
-  }
-  img {
-    object-position: right;
-    object-fit: cover;
-    right: 0;
-  }
-}
-
 .happyEverAfters {
-  // border: none;
-  position: relative;
   display: flex;
-  align-items: center;
+  flex-flow: row nowrap;
   justify-content: space-between;
+  background-color: ui.$white;
+  color: ui.$purple-900;
+  width: 280px;
+  border-radius: ui.$s;
+  padding: ui.$l ui.$s ui.$s ui.$s;
+}
+.happyEverAftersCopy {
+  display: flex;
   flex-flow: column nowrap;
-  gap: ui.$m;
-  width: 180px;
-  padding: ui.$xxl ui.$m ui.$m ui.$m;
-  aspect-ratio: calc(9 / 16);
-  border-radius: ui.$xxs;
-  // border: 1px solid ui.$white;
-  overflow: hidden;
-  font: {
-    weight: 600;
-  }
+  justify-content: flex-end;
+  gap: ui.$xxs;
+
   p {
-    
-    z-index: 1;
-  }
-  a {
-    z-index: 1;
-    color: inherit;
-    text-decoration: none;
-    font: {
-      size: ui.$s;
+    &:first-of-type {
+      line-height: ui.$m;
+      font: {
+        weight: 600;
+        size: ui.$l;
+      }
     }
-    border: 1px solid white;
-    align-self: flex-start;
-    padding: ui.$xxs;
-    border-radius: ui.$xxs;
-  }
-  img {
-    object-fit: cover;
-    filter: brightness(0.8);
-  }
-  span {
-    display: inline-flex;
-    z-index: 1;
-    border: 1px solid ui.$white;
-    padding: ui.$s;
-    border-radius: 100%;
-  }
-  p{
-    font:{
-      weight: 300;
+    &:last-of-type {
+      line-height: ui.$s;
+      font: {
+        size: ui.$s;
+      }
     }
   }
 }
+.happyEverAftersImage {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: ui.$s;
+  width: 80px;
+  aspect-ratio: 1;
+  position: relative;
+  img {
+    object-fit: cover;
+    z-index: 0;
+    // display: none;
+  }
+  svg {
+    color: ui.$purple;
+    font: {
+      size: ui.$xxxl;
+    }
+    padding: ui.$xxs;
+    border: 1px solid ui.$white;
+    z-index: 1;
+    border-radius: 100%;
+    background-color: ui.$white;
+  }
+}
 
+@media only screen and (max-width: 767px) {
+  .hero {
+    height: 100dvh;
+  }
+}

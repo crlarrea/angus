@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import { poppins } from "@/app/fonts/fonts";
+import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "Angus Cat Rescue",
   description:
@@ -13,7 +14,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className={poppins.className}>
         <header>header</header>
         <main>{children}</main>
-        <footer>footer</footer>
+        <Footer/>
       </body>
     </html>
   );

@@ -1,0 +1,7 @@
+@use "./ui.module.scss";
+
+.footer{
+    background-color: ui.$purple-900;
+    padding: ui.$xxl;
+    color: ui.$purple-100;
+}

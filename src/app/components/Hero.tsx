@@ -5,7 +5,9 @@ import { FaDonate } from "react-icons/fa";
 import { BsFillHouseHeartFill } from "react-icons/bs";
 
 import { story_script } from "../fonts/fonts";
-import HeroCards from "./HeroCards";
+import { FaPlay } from "react-icons/fa6";
+
+
 const Hero = () => {
   return (
     <section className={styles.hero}>
@@ -21,7 +23,7 @@ const Hero = () => {
             <FaDonate />
             donate
           </Link>
-          <Link href="/rehome">
+          <Link href="https://www.anguscatrescue.co.uk/applytoadoptacat">
             <BsFillHouseHeartFill />
             rehome
           </Link>
@@ -38,8 +40,22 @@ const Hero = () => {
       </article>
 
       <article className={styles.rightPanel}>
+        <div className={styles.happyEverAfters}>
+          <div className={styles.happyEverAftersCopy}>
+            <p>Happy Ever Afters</p>
+            <p>Little Susu's story</p>
+          </div>
+          <div className={styles.happyEverAftersImage}>
+            <Image
+              src="/susu.avif"
+              fill
+              alt="Susu: Happy Ever Afters."
+              sizes="(max-width:1024px) 80px"
+            />
+            <FaPlay />
+          </div>
+        </div>
         <p>Every cat deserves a second chance.</p>
-        <HeroCards />
       </article>
     </section>
   );
