@@ -1,8 +1,9 @@
 import styles from "@/app/styles/hero.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import { FaHandHoldingHeart } from "react-icons/fa";
-import { RiHomeHeartFill } from "react-icons/ri";
+import { FaDonate } from "react-icons/fa";
+import { BsFillHouseHeartFill } from "react-icons/bs";
+
 import { story_script } from "../fonts/fonts";
 import HeroCards from "./HeroCards";
 const Hero = () => {
@@ -17,11 +18,11 @@ const Hero = () => {
         </p>
         <div className={styles.ctas}>
           <Link href="/donate">
-            <FaHandHoldingHeart />
+            <FaDonate />
             donate
           </Link>
-          <Link href="/donate">
-            <RiHomeHeartFill />
+          <Link href="/rehome">
+            <BsFillHouseHeartFill />
             rehome
           </Link>
         </div>

@@ -31,6 +31,7 @@
   gap: ui.$m;
   a {
     color: inherit;
+
     display: inline-flex;
     align-items: center;
     gap: ui.$xxs;
@@ -47,11 +48,13 @@
     border-radius: ui.$xxs;
     // background-color: ui.$yellow;
     font: {
-      size: ui.$m;
-      weight: 400;
+      size: ui.$l;
+      weight: 600;
     }
+    text-transform: uppercase;
 
     svg {
+      mix-blend-mode: color-burn;
       font: {
         size: ui.$l;
       }
@@ -92,6 +95,7 @@
 }
 
 .rightPanel {
+  z-index: 1;
   flex: 1 1 33%;
   display: flex;
   flex-flow: column nowrap;
@@ -101,13 +105,19 @@
   padding-bottom: ui.$xh;
 }
 .heroImage {
-  top: 0;
   flex: 1 1 33%;
   height: 100%;
-  background:
-    radial-gradient(ellipse at 50% 40%, transparent, ui.$purple 80%),
-    url("../../../public/hero_bkg.png");
-  background-size: cover;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background:
+      radial-gradient(ellipse at 50% 40%, transparent, ui.$purple 50%),
+      url("../../../public/hero_bkg.png");
+    background-size: contain;
+  }
   img {
     filter: drop-shadow(0 0 ui.$xxh rgba(ui.$white, 0.7))
       drop-shadow(0 0 ui.$xxs ui.$white);
