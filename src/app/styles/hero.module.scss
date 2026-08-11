@@ -173,17 +173,21 @@
 .happyEverAfters {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-flow: column nowrap;
   gap: ui.$m;
   width: 180px;
   padding: ui.$xxl ui.$m ui.$m ui.$m;
-  aspect-ratio: calc(16 / 9);
+  aspect-ratio: calc(9 / 16);
   border-radius: ui.$xxs;
   border: 1px solid ui.$white;
+  overflow: hidden;
   font: {
     weight: 600;
   }
   p {
+    
     z-index: 1;
   }
   a {
@@ -200,19 +204,7 @@
   }
   img {
     object-fit: cover;
-  }
-}
-.happyEverAfters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 220px;
-  aspect-ratio: 1;
-  border-radius: ui.$xxs;
-  overflow: hidden;
-  img {
-    object-fit: cover;
+    filter: brightness(0.5);
   }
   span {
     display: inline-flex;
@@ -221,4 +213,10 @@
     padding: ui.$s;
     border-radius: 100%;
   }
+  p{
+    font:{
+      weight: 300;
+    }
+  }
 }
+

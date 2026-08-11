@@ -7,19 +7,18 @@ const HeroCards = () => {
   return (
     <div className={styles.heroCards}>
       <div className={styles.happyEverAfters}>
-        {/* <p>Happy Ever Afters</p> */}
+        <p>Happy Ever Afters</p>
         <span>
           <FaPlay />
         </span>
-        
-          {/* <p>Little Susu's story</p> */}
-          <Image
-            src="/susu.avif"
-            fill
-            alt="Susu: Happy Ever Afters."
-            sizes="(max-width:1024px) 80px"
-          />
-        
+        <p>🐈 Little Susu's story</p>
+
+        <Image
+          src="/susu.avif"
+          fill
+          alt="Susu: Happy Ever Afters."
+          sizes="(max-width:1024px) 80px"
+        />
       </div>
       <div className={styles.donationCard}>
         <p>From £2 a month</p>
