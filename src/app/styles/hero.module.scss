@@ -78,7 +78,6 @@
     }
     border-bottom: 5px solid ui.$yellow;
     padding-bottom: ui.$s;
-
   }
 }
 
@@ -95,9 +94,11 @@
 .rightPanel {
   flex: 1 1 33%;
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   height: 100%;
+  padding-bottom: ui.$xh;
 }
 .heroImage {
   top: 0;
@@ -114,5 +115,48 @@
       fit: contain;
       position: bottom;
     }
+  }
+}
+
+.heroCards {
+  gap: ui.$m;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: ui.$m;
+  width: 180px;
+  padding: ui.$xxl ui.$m ui.$m ui.$m;
+  aspect-ratio: calc(16 / 9);
+  border-radius: ui.$xxs;
+  border: 1px solid ui.$white;
+  font: {
+    weight: 600;
+  }
+  p {
+    z-index: 1;
+  }
+  a {
+    z-index: 1;
+    color: inherit;
+    text-decoration: none;
+    font: {
+      size: ui.$s;
+    }
+    border: 1px solid white;
+    align-self: flex-start;
+    padding: ui.$xxs;
+    border-radius: ui.$xxs;
+  }
+  img {
+    filter: brightness(0.6);
+    object-position: right;
+    object-fit: cover;
+    right: 0;
   }
 }

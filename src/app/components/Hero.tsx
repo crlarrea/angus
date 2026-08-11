@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { RiHomeHeartFill } from "react-icons/ri";
 import { story_script } from "../fonts/fonts";
+import HeroCards from "./HeroCards";
 const Hero = () => {
   return (
     <section className={styles.hero}>
@@ -37,6 +38,7 @@ const Hero = () => {
 
       <article className={styles.rightPanel}>
         <p>Every cat deserves a second chance.</p>
+        <HeroCards />
       </article>
     </section>
   );
