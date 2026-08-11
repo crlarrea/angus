@@ -136,6 +136,7 @@
 }
 
 .donationCard {
+  background: linear-gradient(0deg, ui.$purple-100, transparent);
   position: relative;
   display: flex;
   flex-flow: column nowrap;
@@ -171,6 +172,7 @@
 }
 
 .happyEverAfters {
+  // border: none;
   position: relative;
   display: flex;
   align-items: center;
@@ -181,7 +183,7 @@
   padding: ui.$xxl ui.$m ui.$m ui.$m;
   aspect-ratio: calc(9 / 16);
   border-radius: ui.$xxs;
-  border: 1px solid ui.$white;
+  // border: 1px solid ui.$white;
   overflow: hidden;
   font: {
     weight: 600;
@@ -204,7 +206,7 @@
   }
   img {
     object-fit: cover;
-    filter: brightness(0.5);
+    filter: brightness(0.8);
   }
   span {
     display: inline-flex;
