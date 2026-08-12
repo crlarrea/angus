@@ -4,7 +4,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  height: 70dvh;
+  min-height: 70dvh;
   width: 100dvw;
   background: radial-gradient(
     circle at 50% 50%,
@@ -21,7 +21,8 @@
   display: flex;
   gap: ui.$m;
   flex-flow: column nowrap;
-  padding: ui.$h 0 ui.$xh ui.$h;
+  padding: ui.$h;
+  padding-top: 120px;
   z-index: 1;
 }
 
@@ -62,29 +63,42 @@
     }
 
     border: 2px solid ui.$purple-100;
-    padding: ui.$xxs ui.$xxl ui.$xxs ui.$xs;
+    padding: 0 ui.$l 0 ui.$s;
+    height: 36px;
     border-radius: ui.$h;
     font: {
       weight: 600;
     }
     text-transform: uppercase;
-
+    transition: all 0.3s;
     &:first-of-type {
       background-color: ui.$yellow;
       color: ui.$purple-900;
       border-color: ui.$yellow;
+      &:hover {
+        filter: contrast(1.2);
+      }
+    }
+    &:last-of-type {
+      &:hover {
+        background-color: ui.$purple-100;
+        color: ui.$purple-900;
+      }
     }
   }
 }
 
 .rightPanel {
+  padding-top: 120px;
   z-index: 1;
   flex: 1 1 33%;
   display: flex;
+  padding: ui.$h;
   flex-flow: column nowrap;
   gap: ui.$l;
   justify-content: flex-end;
-  height: 100%;
+  align-items: flex-end;
+
   font: {
     size: ui.$l;
     weight: 300;
@@ -133,6 +147,9 @@
   gap: ui.$s;
 
   p {
+    display: inline-flex;
+    align-items: center;
+    column-gap: ui.$xxxs;
     &:first-of-type {
       line-height: ui.$m;
       font: {
@@ -185,7 +202,7 @@
   color: ui.$purple-900;
   width: 280px;
   border-radius: ui.$s;
-  padding: ui.$l 0 0 ui.$s;
+  padding: ui.$h 0 0 ui.$s;
 }
 .smallDonationCopy {
   display: flex;
@@ -203,8 +220,9 @@
     color: ui.$purple-100;
     border: 2px solid ui.$purple-500;
     align-self: flex-start;
-    padding: 0 ui.$s 0 ui.$s;
     background-color: ui.$purple-500;
+    padding: 0 ui.$l 0 ui.$s;
+    height: 36px;
     border-radius: ui.$h;
   }
   p {
@@ -212,7 +230,7 @@
     &:first-of-type {
       line-height: ui.$xl;
       font: {
-        weight: 600;
+        weight: 800;
         size: ui.$xl;
       }
       color: ui.$purple-500;
@@ -229,13 +247,14 @@
 .smallDonationImage {
   display: flex;
   position: absolute;
-  bottom: -40px;
+  bottom: -41px;
   right: -40px;
   height: 180px;
   aspect-ratio: 1;
 
   img {
     object-fit: cover;
+    filter: drop-shadow(0 0 ui.$xxl ui.$purple-500);
   }
   svg {
     color: ui.$purple;
@@ -251,7 +270,21 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .title {
+    font: {
+      size: ui.$xh;
+    }
+  }
   .hero {
-    height: 100dvh;
+    min-height: 100dvh;
+  }
+  .heroImage {
+    order: 1;
+    height: 350px;
+  }
+  .leftPanel,
+  .rightPanel {
+    padding: ui.$xl;
+    padding-top: ui.$xxh;
   }
 }
