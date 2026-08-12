@@ -1,0 +1,102 @@
+@use "./ui.module.scss";
+
+.bikes {
+  margin-top: 250px;
+  position: relative;
+  background: url("../../../public/bikes_for_cats_bkg.svg") ui.$purple;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: ui.$h;
+
+  //   overflow-x: hidden;
+}
+.copy {
+  padding: ui.$xl;
+  padding-top: ui.$xxh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  gap: ui.$xl;
+  h2 {
+    font: {
+      size: ui.$xh;
+    }
+    line-height: ui.$h;
+    color: ui.$white;
+    span {
+      color: ui.$purple-900;
+    }
+  }
+  p {
+    max-width: 45ch;
+
+    font: {
+      size: ui.$l;
+      weight: 300;
+    }
+    color: ui.$purple-100;
+  }
+  a {
+    align-self: flex-start;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: ui.$xxs;
+    text: {
+      decoration: none;
+    }
+
+    border: 2px solid ui.$purple-100;
+    padding: 0 ui.$l 0 ui.$s;
+    height: 36px;
+    border-radius: ui.$h;
+    font: {
+      weight: 600;
+    }
+    text-transform: uppercase;
+    transition: all 0.3s;
+    background-color: ui.$yellow;
+    color: ui.$purple-900;
+    border-color: ui.$yellow;
+
+    &:hover {
+      filter: contrast(1.2);
+    }
+  }
+}
+
+.imageWrapper {
+  pointer-events: none;
+  left: -5%;
+  bottom: 0;
+  position: absolute;
+  width: 550px;
+  aspect-ratio: 1;
+  img {
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bikes {
+    align-items: flex-end;
+  }
+  .imageWrapper {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .bikes {
+    min-height: 500px;
+    padding-bottom: 200px;
+  }
+  .imageWrapper {
+    width: 350px;
+    left: unset;
+    right: -20%;
+  }
+}

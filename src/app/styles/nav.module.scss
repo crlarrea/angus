@@ -32,22 +32,33 @@
     }
   }
   li {
-    &:last-of-type, &:nth-of-type(4) {
+    &:last-of-type,
+    &:nth-of-type(4) {
       a {
         display: inline-flex;
         padding: ui.$xxs;
         aspect-ratio: 1;
-        background-color: rgba(ui.$purple-100,0.3);
+        background-color: rgba(ui.$purple-100, 0.3);
         border-radius: 100%;
         margin-left: ui.$xxl;
         color: ui.$purple-100;
-        font:{
-            size: ui.$l;
+        font: {
+          size: ui.$l;
         }
-        &:hover{
-            color: ui.$yellow;
-            background-color: rgba(ui.$yellow,0.3);
+        &:hover {
+          color: ui.$yellow;
+          background-color: rgba(ui.$yellow, 0.3);
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .links {
+    li {
+      &:not(&:last-of-type) {
+        display: none;
       }
     }
   }

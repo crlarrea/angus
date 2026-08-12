@@ -46,9 +46,7 @@ const Hero = () => {
               From as little as <br /> £2 a month
             </p>
             <p>Every cat deserves a second chance.</p>
-            <Link href="https://www.anguscatrescue.co.uk/plans-pricing/payment/">
-              Let's do it!
-            </Link>
+            <Link href="https://www.anguscatrescue.co.uk/plans-pricing/payment/">Let's do it!</Link>
           </div>
           <div className={styles.smallDonationImage}>
             <Image
@@ -61,10 +59,7 @@ const Hero = () => {
         </div>
         <div className={styles.happyEverAfters}>
           <div className={styles.happyEverAftersCopy}>
-            <p>
-              <AiTwotoneHeart />
-              Happy Ever Afters
-            </p>
+            <p><AiTwotoneHeart/>Happy Ever Afters</p>
             <p>Little Susu's story</p>
           </div>
           <div className={styles.happyEverAftersImage}>

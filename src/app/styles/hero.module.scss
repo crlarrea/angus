@@ -42,6 +42,7 @@
     border-bottom: 5px solid ui.$yellow;
     padding-bottom: ui.$s;
   }
+  max-width: 7ch;
 }
 
 .subtitle {
@@ -107,8 +108,10 @@
   padding-bottom: ui.$h;
 }
 .heroImage {
-  flex: 1 1 33%;
+  position: absolute;
   height: 100%;
+  width: 100%;
+  bottom: 0;
   &:before {
     content: "";
     width: 100%;
@@ -275,16 +278,19 @@
       size: ui.$xh;
     }
   }
+
   .hero {
     min-height: 100dvh;
   }
-  .heroImage {
-    order: 1;
-    height: 350px;
+
+  .leftPanel {
+    padding: ui.$xl;
+    padding-top: ui.$xxh;
   }
-  .leftPanel,
+
   .rightPanel {
     padding: ui.$xl;
     padding-top: ui.$xxh;
+    padding-bottom: 250px;
   }
 }

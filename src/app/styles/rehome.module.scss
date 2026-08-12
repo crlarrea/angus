@@ -1,0 +1,113 @@
+@use "./ui.module.scss";
+
+.rehome {
+  background-color: ui.$purple-50;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: ui.$h;
+  overflow: hidden;
+}
+.copy {
+  padding: ui.$xl;
+  padding-top: ui.$xxh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: ui.$xl;
+  h2 {
+    text-align: center;
+    font: {
+      size: ui.$h;
+    }
+    line-height: ui.$h;
+    span {
+      color: ui.$purple;
+    }
+  }
+  p {
+    max-width: 45ch;
+    text-align: center;
+    font: {
+      size: ui.$m;
+      weight: 200;
+    }
+  }
+  a {
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: ui.$xxs;
+    text: {
+      decoration: none;
+    }
+
+    border: 2px solid ui.$purple-100;
+    padding: 0 ui.$l 0 ui.$s;
+    height: 36px;
+    border-radius: ui.$h;
+    font: {
+      weight: 600;
+    }
+    text-transform: uppercase;
+    transition: all 0.3s;
+    background-color: ui.$yellow;
+    color: ui.$purple-900;
+    border-color: ui.$yellow;
+
+    &:hover {
+      filter: contrast(1.2);
+    }
+  }
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  gap: ui.$xxl;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  padding: ui.$h;
+}
+
+.card {
+  scroll-snap-align: center;
+  position: relative;
+  flex: 0 0 220px;
+  aspect-ratio: 1;
+  border: 1px solid ui.$pink;
+  border-radius: ui.$m;
+  overflow: hidden;
+  img {
+    object: {
+      fit: cover;
+      position: right;
+    }
+  }
+}
+
+.catName {
+  z-index: 1;
+  position: absolute;
+  bottom: ui.$xxs;
+  left: ui.$xxs;
+  color: ui.$white;
+  font: {
+    size: ui.$xxxxl;
+    weight: 600;
+    family: "Story Script";
+  }
+  //   mix-blend-mode: hard-light;
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery {
+    
+    padding: ui.$h ui.$xxl;
+    
+  }
+}
