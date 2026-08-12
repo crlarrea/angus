@@ -82,6 +82,7 @@
   border: 10px solid ui.$purple-100;
   border-radius: ui.$m;
   overflow: hidden;
+  background-color: ui.$purple-100;
   &:nth-of-type(even){
     transform: rotateZ(5deg);
   }
@@ -89,6 +90,7 @@
     transform: rotateZ(-5deg);
   }
   img {
+    border-radius: ui.$l;
     object: {
       fit: cover;
       position: right;
