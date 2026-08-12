@@ -7,7 +7,6 @@ import { BsFillHouseHeartFill } from "react-icons/bs";
 import { story_script } from "../fonts/fonts";
 import { FaPlay } from "react-icons/fa6";
 
-
 const Hero = () => {
   return (
     <section className={styles.hero}>
@@ -40,6 +39,23 @@ const Hero = () => {
       </article>
 
       <article className={styles.rightPanel}>
+        <div className={styles.smallDonation}>
+          <div className={styles.smallDonationCopy}>
+            <p>
+              From as little as <br /> £2 a month
+            </p>
+            <p>Every cat deserves a second chance.</p>
+            <Link href="/donate">Let's do it!</Link>
+          </div>
+          <div className={styles.smallDonationImage}>
+            <Image
+              src="/black_cat.png"
+              fill
+              alt="Susu: Happy Ever Afters."
+              sizes="(max-width:1024px) 80px"
+            />
+          </div>
+        </div>
         <div className={styles.happyEverAfters}>
           <div className={styles.happyEverAftersCopy}>
             <p>Happy Ever Afters</p>
@@ -55,7 +71,6 @@ const Hero = () => {
             <FaPlay />
           </div>
         </div>
-        <p>Every cat deserves a second chance.</p>
       </article>
     </section>
   );

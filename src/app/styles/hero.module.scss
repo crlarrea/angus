@@ -63,15 +63,12 @@
 
     border: 2px solid ui.$purple-100;
     padding: ui.$xxs ui.$xxl ui.$xxs ui.$xs;
-    border-radius: ui.$xxs;
+    border-radius: ui.$h;
     font: {
       weight: 600;
     }
     text-transform: uppercase;
 
-    svg {
-      mix-blend-mode: color-burn;
-    }
     &:first-of-type {
       background-color: ui.$yellow;
       color: ui.$purple-900;
@@ -89,9 +86,10 @@
   justify-content: flex-end;
   height: 100%;
   font: {
-    size: ui.$xxl;
+    size: ui.$l;
+    weight: 300;
   }
-  // line-height: ui.$xxxxl;
+  line-height: ui.$xxxl;
   padding-bottom: ui.$h;
 }
 .heroImage {
@@ -132,7 +130,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
-  gap: ui.$xxs;
+  gap: ui.$s;
 
   p {
     &:first-of-type {
@@ -164,6 +162,80 @@
     object-fit: cover;
     z-index: 0;
     // display: none;
+  }
+  svg {
+    color: ui.$purple;
+    font: {
+      size: ui.$xxxl;
+    }
+    padding: ui.$xxs;
+    border: 1px solid ui.$white;
+    z-index: 1;
+    border-radius: 100%;
+    background-color: ui.$white;
+  }
+}
+
+.smallDonation {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: ui.$purple-100;
+  color: ui.$purple-900;
+  width: 280px;
+  border-radius: ui.$s;
+  padding: ui.$l 0 0 ui.$s;
+}
+.smallDonationCopy {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  gap: ui.$s;
+  padding-bottom: ui.$s;
+  a {
+    margin-top: ui.$xxl;
+    text-decoration: none;
+    font: {
+      size: ui.$s;
+      weight: 600;
+    }
+    color: ui.$purple-100;
+    border: 2px solid ui.$purple-500;
+    align-self: flex-start;
+    padding: 0 ui.$s 0 ui.$s;
+    background-color: ui.$purple-500;
+    border-radius: ui.$h;
+  }
+  p {
+    max-width: 20ch;
+    &:first-of-type {
+      line-height: ui.$xl;
+      font: {
+        weight: 600;
+        size: ui.$xl;
+      }
+      color: ui.$purple-500;
+    }
+    &:last-of-type {
+      line-height: ui.$s;
+      font: {
+        size: ui.$s;
+      }
+      color: ui.$purple-900;
+    }
+  }
+}
+.smallDonationImage {
+  display: flex;
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  height: 180px;
+  aspect-ratio: 1;
+
+  img {
+    object-fit: cover;
   }
   svg {
     color: ui.$purple;
