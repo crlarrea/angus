@@ -1,7 +1,7 @@
 @use "./ui.module.scss";
 
 .rehome {
-  background-color: ui.$purple-50;
+  background: radial-gradient(ellipse at 50% 0%, ui.$white, ui.$purple-50,ui.$purple-100 80%);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -80,10 +80,10 @@
   position: relative;
   flex: 0 0 220px;
   aspect-ratio: 1;
-  border: 10px solid ui.$purple-100;
+  border: 10px solid ui.$purple;
   border-radius: ui.$m;
   overflow: hidden;
-  background-color: ui.$purple-100;
+  background-color: ui.$purple;
   &:nth-of-type(even){
     transform: rotateZ(5deg);
   }
@@ -91,7 +91,7 @@
     transform: rotateZ(-5deg);
   }
   img {
-    border-radius: ui.$l;
+    border-radius: ui.$xxxxl;
     object: {
       fit: cover;
       position: right;
