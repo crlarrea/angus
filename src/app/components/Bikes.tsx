@@ -11,7 +11,7 @@ const Bikes = () => {
           <span>Bikes</span> for cats
         </h2>
         <p>
-          Be a cool cat. Enjoy the sunshine, and ride for a great cause. Every
+          <span>Be a cool cat.</span><br/> Enjoy the sunshine, and ride for a great cause. Every
           donation helps support our charity and the work we do.
         </p>
 

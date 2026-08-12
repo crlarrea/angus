@@ -39,6 +39,12 @@
     }
     color: ui.$purple-100;
   }
+  span {
+    color: ui.$white;
+    font: {
+      weight: 600;
+    }
+  }
   a {
     align-self: flex-start;
     color: inherit;
