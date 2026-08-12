@@ -72,6 +72,7 @@
   scroll-snap-type: x mandatory;
   scroll-snap-stop: always;
   padding: ui.$h;
+  justify-content: center;
 }
 
 .card {
@@ -114,7 +115,7 @@
 
 @media only screen and (max-width: 767px) {
   .gallery {
-    
+    justify-content: unset;
     padding: ui.$h ui.$xxl;
     
   }
