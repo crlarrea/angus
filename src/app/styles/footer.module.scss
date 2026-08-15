@@ -1,10 +1,10 @@
 @use "./ui.module.scss";
 
 .footer {
-  background-color: ui.$purple-900;
+  background-color: ui.$blue-900;
   padding: ui.$xxl;
   padding-top: ui.$xxh;
-  color: ui.$purple-100;
+  color: ui.$blue-100;
   display: flex;
   flex-flow: row wrap;
   row-gap: ui.$h;
@@ -54,7 +54,7 @@
 }
 
 .socials {
-  // background-color: ui.$purple;
+  // background-color: ui.$blue;
   flex: 1 1 1%;
   display: flex;
   align-items: flex-end;

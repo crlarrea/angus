@@ -3,7 +3,7 @@
 .bikes {
   margin-top: 250px;
   position: relative;
-  background: url("../../../public/bikes_for_cats_bkg.svg") ui.$purple;
+  background: url("../../../public/bikes_for_cats_bkg.svg") ui.$blue-300;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -27,7 +27,7 @@
     line-height: ui.$h;
     color: ui.$white;
     span {
-      color: ui.$purple-900;
+      color: ui.$blue-900;
     }
   }
   p {
@@ -37,7 +37,7 @@
       size: ui.$l;
       weight: 300;
     }
-    color: ui.$purple-100;
+    color: ui.$blue-100;
   }
   span {
     color: ui.$white;
@@ -55,7 +55,7 @@
       decoration: none;
     }
 
-    border: 2px solid ui.$purple-100;
+    border: 2px solid ui.$blue-100;
     padding: 0 ui.$l 0 ui.$s;
     height: 36px;
     border-radius: ui.$h;
@@ -65,7 +65,7 @@
     text-transform: uppercase;
     transition: all 0.3s;
     background-color: ui.$yellow;
-    color: ui.$purple-900;
+    color: ui.$blue-900;
     border-color: ui.$yellow;
 
     &:hover {
@@ -84,7 +84,7 @@
   img {
     object-fit: contain;
     object-position: center;
-    filter: drop-shadow(0 0 ui.$xxl ui.$purple-100)
+    filter: drop-shadow(0 0 ui.$xxl ui.$blue-100)
   }
 }
 
