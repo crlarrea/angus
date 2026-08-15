@@ -59,14 +59,14 @@
   display: flex;
   flex-flow: column nowrap;
   gap: ui.$m;
-  
+
   justify-content: flex-end;
   color: grey;
-  max-width: 35ch;
   font: {
     size: ui.$s;
   }
   p {
+    max-width: 35ch;
   }
 
   a {
@@ -101,9 +101,7 @@
   .rightPanel {
     flex-basis: 100%;
   }
-  
 
-  
   .copyright {
     order: 1;
     flex-basis: 100%;
