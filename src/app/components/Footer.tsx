@@ -33,28 +33,27 @@ const Footer = () => {
         Angus Cat Rescue, Scotland, UK. &copy; {new Date().getFullYear()}
       </article>
       <article className={styles.rightPanel}>
-        <div>
-          <p>
-            Get in touch with Angus to learn more about our work and find out
-            how to donate.
-          </p>
-          <p>We appreciate your support!</p>
+        <p>
+          Get in touch with Angus to learn more about our work and find out how
+          to donate.
+        </p>
+        <p>We appreciate your support!</p>
 
-          <ul className={styles.contact}>
-            <li>
-              <Link href="mailto:info@anguscatrescue.co.uk">
-                <FaEnvelopeOpenText />
-                info@anguscatrescue.co.uk
-              </Link>
-            </li>
-            <li>
-              <Link href="tel:+447982064765">
-                <FaPhoneAlt />
-                0798 206 4765
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <ul className={styles.contact}>
+          <li>
+            <Link href="mailto:info@anguscatrescue.co.uk">
+              <FaEnvelopeOpenText />
+              info@anguscatrescue.co.uk
+            </Link>
+          </li>
+          <li>
+            <Link href="tel:+447982064765">
+              <FaPhoneAlt />
+              0798 206 4765
+            </Link>
+          </li>
+        </ul>
+
         <ul className={styles.socialMedia}>
           <li>
             <Link

@@ -58,8 +58,8 @@
   flex: 1 1 1%;
   display: flex;
   flex-flow: column nowrap;
-  gap: ui.$xxl;
-  align-items: flex-end;
+  gap: ui.$m;
+  
   justify-content: flex-end;
   color: grey;
   max-width: 35ch;
@@ -80,7 +80,7 @@
   flex-flow: column nowrap;
   gap: ui.$xxs;
   list-style-type: none;
-  
+
   a {
     gap: ui.$s;
     display: inline-flex;
@@ -89,15 +89,21 @@
   }
 }
 .socialMedia {
+  margin-top: ui.$xl;
   display: flex;
+  justify-content: flex-end;
   list-style-type: none;
   gap: ui.$m;
 }
 
 @media only screen and (max-width: 767px) {
-  .leftPanel, .rightPanel {
+  .leftPanel,
+  .rightPanel {
     flex-basis: 100%;
   }
+  
+
+  
   .copyright {
     order: 1;
     flex-basis: 100%;
