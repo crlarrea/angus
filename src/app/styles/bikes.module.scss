@@ -13,8 +13,8 @@
   //   overflow-x: hidden;
 }
 .copy {
-  padding: ui.$xl;
-  padding-top: ui.$xxh;
+  padding: ui.$h ui.$xl ui.$xxh ui.$xl;
+
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
