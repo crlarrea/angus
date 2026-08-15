@@ -81,7 +81,7 @@
   flex: 0 0 220px;
   aspect-ratio: 1;
   border: 10px solid ui.$blue-300;
-  border-radius: ui.$m;
+  border-radius: ui.$xh;
   overflow: hidden;
   background-color: ui.$blue-300;
   &:nth-of-type(even){
@@ -110,6 +110,7 @@
     weight: 600;
     family: "Story Script";
   }
+  padding-left: ui.$m;
   //   mix-blend-mode: hard-light;
 }
 
