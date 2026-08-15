@@ -1,11 +1,17 @@
 import styles from "@/app/styles/footer.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import { FaTiktok, FaInstagram, FaFacebookF } from "react-icons/fa";
+import {
+  FaTiktok,
+  FaInstagram,
+  FaFacebookF,
+  FaPhoneAlt,
+  FaEnvelopeOpenText,
+} from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <article className={styles.contact}>
+      <article className={styles.leftPanel}>
         <div className={styles.logo}>
           <Image
             src="/logo.png"
@@ -22,29 +28,34 @@ const Footer = () => {
             License Authority: Angus Council
           </p>
         </div>
+      </article>
+      <article className={styles.copyright}>
+        Angus Cat Rescue, Scotland, UK. &copy; {new Date().getFullYear()}
+      </article>
+      <article className={styles.rightPanel}>
         <div>
           <p>
             Get in touch with Angus to learn more about our work and find out
             how to donate.
           </p>
           <p>We appreciate your support!</p>
-          <ul>
+
+          <ul className={styles.contact}>
             <li>
               <Link href="mailto:info@anguscatrescue.co.uk">
+                <FaEnvelopeOpenText />
                 info@anguscatrescue.co.uk
               </Link>
             </li>
             <li>
-              <Link href="tel:+447982064765">07982064765</Link>
+              <Link href="tel:+447982064765">
+                <FaPhoneAlt />
+                0798 206 4765
+              </Link>
             </li>
           </ul>
         </div>
-      </article>
-      <article className={styles.copyright}>
-        Angus Cat Rescue, Scotland, UK. &copy; {new Date().getFullYear()}
-      </article>
-      <article className={styles.socials}>
-        <ul>
+        <ul className={styles.socialMedia}>
           <li>
             <Link
               href="https://www.tiktok.com/@angus.cat.rescue"
